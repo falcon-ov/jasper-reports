@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.5.final using JasperReports Library version 6.20.6  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="HolidaysReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c954bd99-7d09-445a-85c6-1b7706848d3c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="XmlDataAdapter"/>
+	<queryString language="xPath">
+		<![CDATA[/Year2021/holydays]]>
+	</queryString>
+	<field name="country" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="COUNTRY"/>
+		<fieldDescription><![CDATA[country]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="DATE"/>
+		<fieldDescription><![CDATA[date]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NAME"/>
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="99" splitType="Stretch">
+			<staticText>
+				<reportElement x="180" y="20" width="201" height="79" uuid="60e20e01-e6b9-48cf-944f-79dc75838c55"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Holidays Report 2021]]></text>
+			</staticText>
+			<image>
+				<reportElement x="430" y="0" width="120" height="30" uuid="1f5ed810-dea8-4ef7-ad11-ff297fde3f99">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 1]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="180" y="0" width="201" height="50" uuid="695fd056-98a5-4ea9-8b52-d4d4b859d56c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Page Header]]></text>
+			</staticText>
+			<image>
+				<reportElement x="430" y="0" width="120" height="30" uuid="98d8557a-3721-431a-a6b0-93e485d3f39c">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} > 1]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="130" y="0" width="100" height="40" uuid="214ab2a5-8814-4a91-9108-dc03183abf2a"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Country]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="0" width="100" height="40" uuid="8ad66c1c-2eca-42d5-8930-cebb5471078a"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="0" width="100" height="40" uuid="9d7a8cff-0d03-4630-9632-a1b40e840047"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="130" y="0" width="100" height="30" uuid="0b527abf-00b0-468c-b396-4c6c19b885e0"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{country}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="0" width="100" height="30" uuid="75d291d7-23a2-43f3-a1b1-d97e67c2c669"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="100" height="30" uuid="c6b5d871-0922-41a1-a3e6-2764ca77c593"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="180" y="0" width="201" height="45" uuid="797b1308-3735-4a43-adfe-f5d0f8c40089"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Column Footer]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="180" y="0" width="201" height="54" uuid="5d3e0e65-5b5c-4fb3-a479-97a6a7f6e98c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Page Footer]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="180" y="0" width="201" height="42" uuid="8909e153-f228-492f-b859-dd5f9d9a9b3e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Summary]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
