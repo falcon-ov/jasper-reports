@@ -17,7 +17,7 @@ import java.util.Map;
 public class ReportWithMap {
 
     public static void generate() throws JRException {
-        List<Holiday> holidays = HolidayDataProvider.getTestHolidays();
+        List<Holiday> holidays = HolidayDataProvider.getAllHolidays();
         List<Map<String, ?>> data = new ArrayList<>();
 
         for (Holiday holiday : holidays) {

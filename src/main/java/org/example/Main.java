@@ -14,10 +14,6 @@ import org.example.util.PathConstants;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * Главная точка входа приложения.
- * Предоставляет интерактивное меню для генерации различных типов отчетов.
- */
 public class Main {
 
     public static void main(String[] args) {
@@ -61,7 +57,6 @@ public class Main {
                 e.printStackTrace();
             }
         }
-
         scanner.close();
     }
 

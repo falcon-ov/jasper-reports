@@ -16,7 +16,6 @@ public class ReportCompiler {
         String jasperFile = PathConstants.HOLIDAYS_JASPER;
 
         try {
-            // Проверка существования файла
             File file = new File(jrxmlFile);
             if (!file.exists()) {
                 System.err.println("Файл не найден: " + jrxmlFile);

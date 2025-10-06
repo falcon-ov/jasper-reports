@@ -14,7 +14,7 @@ import java.util.List;
 public class ReportWithBean {
 
     public static void generate() throws JRException {
-        List<Holiday> holidays = HolidayDataProvider.getTestHolidays();
+        List<Holiday> holidays = HolidayDataProvider.getAllHolidays();
         JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(holidays);
 
         JasperPrint print = JasperFillManager.fillReport(

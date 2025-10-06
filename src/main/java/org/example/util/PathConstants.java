@@ -17,6 +17,7 @@ public class PathConstants {
 
     // Ресурсы
     public static final String LOGO_PATH = RESOURCES_DIR + "logo.png";
+    public static final String HOLIDAYS_XML = "/MyDataBase.xml";
 
     // Выходные файлы - Jasper Reports
     public static final String REPORT_BEAN_PDF = OUTPUT_DIR + "Report_Bean.pdf";

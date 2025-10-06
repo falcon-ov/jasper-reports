@@ -12,7 +12,7 @@ import java.io.InputStream;
 public class ReportWithXml {
 
     public static void generate() throws JRException {
-        InputStream xmlStream = ReportWithXml.class.getResourceAsStream("/MyDataBase.xml");
+        InputStream xmlStream = ReportWithXml.class.getResourceAsStream(PathConstants.HOLIDAYS_XML);
         if (xmlStream == null) {
             System.err.println("XML file not found: /MyDataBase.xml");
             return;

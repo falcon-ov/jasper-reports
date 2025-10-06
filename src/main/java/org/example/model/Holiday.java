@@ -1,15 +1,21 @@
 package org.example.model;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-/**
- * Модель праздника.
- */
 public class Holiday {
+    @JacksonXmlProperty(localName = "NAME")
     private String name;
+
+    @JacksonXmlProperty(localName = "DATE")
     private String date;
+
+    @JacksonXmlProperty(localName = "COUNTRY")
     private String country;
+
+    // Нужен пустой конструктор для Jackson
+    public Holiday() {}
 
     public Holiday(String country, String date, String name) {
         this.name = name;
@@ -17,6 +23,7 @@ public class Holiday {
         this.country = country;
     }
 
+    // геттеры/сеттеры
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
 

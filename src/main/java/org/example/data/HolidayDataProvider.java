@@ -1,11 +1,11 @@
 package org.example.data;
 
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import org.example.model.Holiday;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.NodeList;
+import org.example.model.HolidaysRoot;
+import org.example.util.CountryConstants;
+import org.example.util.PathConstants;
 
-import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,54 +22,18 @@ public class HolidayDataProvider {
      * Возвращает полный список праздников Италии и Молдовы за 2021 год из XML
      */
     public static List<Holiday> getAllHolidays() {
-        List<Holiday> holidays = new ArrayList<>();
-
-        try {
-            InputStream is = HolidayDataProvider.class.getResourceAsStream("/MyDataBase.xml");
+        try (InputStream is = HolidayDataProvider.class.getResourceAsStream(PathConstants.HOLIDAYS_XML)) {
             if (is == null) {
-                System.err.println("XML file not found: /MyDataBase.xml");
-                return holidays;
+                throw new IllegalStateException("XML file not found: /MyDataBase.xml");
             }
 
-            Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(is);
-            doc.getDocumentElement().normalize();
+            XmlMapper xmlMapper = new XmlMapper();
+            HolidaysRoot year = xmlMapper.readValue(is, HolidaysRoot.class);
 
-            NodeList nodes = doc.getElementsByTagName("holydays");
-            for (int i = 0; i < nodes.getLength(); i++) {
-                Element elem = (Element) nodes.item(i);
-                String country = elem.getElementsByTagName("COUNTRY").item(0).getTextContent();
-                String date = elem.getElementsByTagName("DATE").item(0).getTextContent();
-                String name = elem.getElementsByTagName("NAME").item(0).getTextContent();
-                holidays.add(new Holiday(country, date, name));
-            }
-            System.out.println("Loaded " + holidays.size() + " holidays from XML");
-
+            return year.getHolidays();
         } catch (Exception e) {
-            System.err.println("Error parsing XML: " + e.getMessage());
-            e.printStackTrace();
+            throw new RuntimeException("Error parsing XML", e);
         }
-
-        return holidays;
-    }
-
-    /**
-     * Возвращает тестовый набор данных для примеров с datasource (первые 2 из полного списка)
-     */
-    public static List<Holiday> getTestHolidays() {
-        List<Holiday> all = getAllHolidays();
-        if (all.size() >= 2) {
-            return all.subList(0, 2);
-        }
-        return new ArrayList<>();
-    }
-
-    /**
-     * Возвращает праздники только для указанной страны
-     */
-    public static List<Holiday> getHolidaysByCountry(String country) {
-        return getAllHolidays().stream()
-                .filter(h -> h.getCountry().equalsIgnoreCase(country))
-                .toList();
     }
 
     /**
@@ -79,8 +43,8 @@ public class HolidayDataProvider {
      */
     public static Map<String, int[]> getMonthCountsByCountry(List<Holiday> holidays) {
         Map<String, int[]> counts = new HashMap<>();
-        counts.put("Italia", new int[13]);
-        counts.put("Moldavia", new int[13]);
+        counts.put(CountryConstants.ITALY, new int[13]);
+        counts.put(CountryConstants.MOLDOVA, new int[13]);
 
         for (Holiday holiday : holidays) {
             Integer month = holiday.getMonth();
@@ -92,5 +56,9 @@ public class HolidayDataProvider {
             }
         }
         return counts;
+    }
+    public static void main(String[] args) {
+        List<Holiday> holidays = getAllHolidays();
+        holidays.forEach(System.out::println);
     }
 }
