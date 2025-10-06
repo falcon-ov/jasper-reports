@@ -9,8 +9,10 @@ import net.sf.dynamicreports.report.constant.VerticalTextAlignment;
 import net.sf.dynamicreports.report.definition.ReportParameters;
 import net.sf.dynamicreports.report.exception.DRException;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
+import org.example.data.HolidayDataProvider;
 import org.example.dynamicreport.styles.ReportStyles;
 import org.example.model.Holiday;
+import org.example.util.PathConstants;
 import org.example.util.ResourceLoader;
 
 import java.awt.image.BufferedImage;
@@ -26,103 +28,99 @@ import static net.sf.dynamicreports.report.builder.DynamicReports.*;
 public class HolidayDynamicReport {
 
     public static JasperReportBuilder buildReport(List<Holiday> holidays) {
-        // Загрузка логотипа
+        // Загружаем логотип
         BufferedImage logoImage = ResourceLoader.loadLogo();
 
-        // Кастомные выражения для полей
-        AbstractSimpleExpression<String> countryExpression = new AbstractSimpleExpression<>() {
-            @Override
-            public String evaluate(ReportParameters reportParameters) {
-                return reportParameters.getFieldValue("country");
-            }
-        };
-
-        AbstractSimpleExpression<String> dateExpression = new AbstractSimpleExpression<>() {
-            @Override
-            public String evaluate(ReportParameters reportParameters) {
-                return reportParameters.getFieldValue("date");
-            }
-        };
-
-        AbstractSimpleExpression<String> nameExpression = new AbstractSimpleExpression<>() {
-            @Override
-            public String evaluate(ReportParameters reportParameters) {
-                return reportParameters.getFieldValue("name");
-            }
-        };
-
-        // Компоненты
+        // Заголовок (title)
         ComponentBuilder<?, ?> titleComponent = cmp.verticalList(
                 cmp.horizontalList(
                         cmp.filler().setFixedWidth(410),
-                        logoImage != null ? cmp.image(logoImage).setFixedDimension(140, 30).setStyle(ReportStyles.getImageStyle())
-                                .setPrintWhenExpression(exp.<Boolean>jasperSyntax("$V{PAGE_NUMBER} == 1", Boolean.class))
-                                : cmp.filler().setFixedDimension(140, 30)
+                        logoImage != null
+                                ? cmp.image(logoImage)
+                                .setFixedDimension(120, 30)
+                                .setStyle(ReportStyles.getImageStyle())
+                                .setPrintWhenExpression(exp.jasperSyntax("$V{PAGE_NUMBER} == 1", Boolean.class))
+                                : cmp.filler().setFixedDimension(120, 30)
                 ),
                 cmp.horizontalList(
                         cmp.filler().setFixedWidth(180),
                         cmp.text("Holidays Report 2021")
                                 .setStyle(ReportStyles.getTitleStyle())
-                                .setFixedDimension(201, 81)
+                                .setFixedDimension(201, 79)
                                 .setHorizontalTextAlignment(HorizontalTextAlignment.CENTER)
                 )
-        ).setFixedHeight(123);
+        ).setFixedHeight(99);
 
+        // Заголовок страницы (pageHeader)
         ComponentBuilder<?, ?> pageHeaderComponent = cmp.verticalList(
                 cmp.horizontalList(
                         cmp.filler().setFixedWidth(410),
-                        logoImage != null ? cmp.image(logoImage).setFixedDimension(140, 30).setStyle(ReportStyles.getImageStyle())
-                                .setPrintWhenExpression(exp.<Boolean>jasperSyntax("$V{PAGE_NUMBER} > 1", Boolean.class))
-                                : cmp.filler().setFixedDimension(140, 30)
+                        logoImage != null
+                                ? cmp.image(logoImage)
+                                .setFixedDimension(120, 30)
+                                .setStyle(ReportStyles.getImageStyle())
+                                .setPrintWhenExpression(exp.jasperSyntax("$V{PAGE_NUMBER} > 1", Boolean.class))
+                                : cmp.filler().setFixedDimension(120, 30)
                 ),
                 cmp.horizontalList(
                         cmp.filler().setFixedWidth(180),
                         cmp.text("Page Header")
                                 .setStyle(ReportStyles.getHeaderStyle())
-                                .setFixedDimension(201, 42)
+                                .setFixedDimension(201, 50)
                                 .setHorizontalTextAlignment(HorizontalTextAlignment.CENTER)
                 )
-        ).setFixedHeight(92);
+        ).setFixedHeight(50);
 
+        // Заголовки колонок (columnHeader)
         ComponentBuilder<?, ?> columnHeaderComponent = cmp.horizontalList(
                 cmp.filler().setFixedWidth(130),
-                cmp.text("Country").setStyle(ReportStyles.getColumnHeaderStyle()).setFixedDimension(100, 30),
-                cmp.text("Date").setStyle(ReportStyles.getColumnHeaderStyle()).setFixedDimension(100, 30),
-                cmp.text("Name").setStyle(ReportStyles.getColumnHeaderStyle()).setFixedDimension(100, 30)
-        ).setFixedHeight(30);
+                cmp.text("Country").setStyle(ReportStyles.getColumnHeaderStyle()).setFixedDimension(100, 40),
+                cmp.text("Date").setStyle(ReportStyles.getColumnHeaderStyle()).setFixedDimension(100, 40),
+                cmp.text("Name").setStyle(ReportStyles.getColumnHeaderStyle()).setFixedDimension(100, 40)
+        ).setFixedHeight(40);
 
+        // Детали (detail) — вывод полей $F{country}, $F{date}, $F{name}
         ComponentBuilder<?, ?> detailComponent = cmp.horizontalList(
                 cmp.filler().setFixedWidth(130),
-                cmp.text(countryExpression).setStyle(ReportStyles.getDetailStyle()).setFixedDimension(100, 30),
-                cmp.text(dateExpression).setStyle(ReportStyles.getDetailStyle()).setFixedDimension(100, 30),
-                cmp.text(nameExpression).setStyle(ReportStyles.getDetailStyle()).setFixedDimension(100, 30)
+                cmp.text(exp.jasperSyntax("$F{country}", String.class))
+                        .setStyle(ReportStyles.getDetailStyle())
+                        .setFixedDimension(100, 30),
+                cmp.text(exp.jasperSyntax("$F{date}", String.class))
+                        .setStyle(ReportStyles.getDetailStyle())
+                        .setFixedDimension(100, 30),
+                cmp.text(exp.jasperSyntax("$F{name}", String.class))
+                        .setStyle(ReportStyles.getDetailStyle())
+                        .setFixedDimension(100, 30)
         ).setFixedHeight(30);
 
+        // Column Footer
         ComponentBuilder<?, ?> columnFooterComponent = cmp.horizontalList(
                 cmp.filler().setFixedWidth(180),
                 cmp.text("Column Footer")
                         .setStyle(ReportStyles.getFooterStyle())
-                        .setFixedDimension(201, 31)
+                        .setFixedDimension(201, 45)
                         .setHorizontalTextAlignment(HorizontalTextAlignment.CENTER)
-        ).setFixedHeight(31);
+        ).setFixedHeight(45);
 
+        // Page Footer
         ComponentBuilder<?, ?> pageFooterComponent = cmp.horizontalList(
                 cmp.filler().setFixedWidth(180),
                 cmp.text("Page Footer")
                         .setStyle(ReportStyles.getFooterStyle())
-                        .setFixedDimension(201, 31)
+                        .setFixedDimension(201, 54)
                         .setHorizontalTextAlignment(HorizontalTextAlignment.CENTER)
-        ).setFixedHeight(31);
+        ).setFixedHeight(54);
 
+        // Summary
         ComponentBuilder<?, ?> summaryComponent = cmp.horizontalList(
                 cmp.filler().setFixedWidth(180),
                 cmp.text("Summary")
                         .setStyle(ReportStyles.getSummaryStyle())
-                        .setFixedDimension(201, 31)
+                        .setFixedDimension(201, 42)
                         .setHorizontalTextAlignment(HorizontalTextAlignment.CENTER)
-        ).setFixedHeight(31);
+        ).setFixedHeight(42);
 
-        // Настройка отчета
+        // Настройка отчёта
         return report()
                 .setPageFormat(PageType.A4)
                 .setPageMargin(margin(20))
@@ -141,6 +139,7 @@ public class HolidayDynamicReport {
                 .setDataSource(new JRBeanCollectionDataSource(holidays));
     }
 
+
     public static void generateReport(List<Holiday> holidays, String pdfPath, String jrxmlPath) {
         try {
             JasperReportBuilder report = buildReport(holidays);
@@ -156,5 +155,16 @@ public class HolidayDynamicReport {
             System.err.println("Error generating report: " + e.getMessage());
             e.printStackTrace();
         }
+    }
+
+    public static void main(String[] args) {
+        System.out.println("\n[Генерация Dynamic Report...]");
+        List<Holiday> holidays = HolidayDataProvider.getAllHolidays();
+        HolidayDynamicReport.generateReport(
+                holidays,
+                PathConstants.DYNAMIC_REPORT_PDF,
+                PathConstants.DYNAMIC_REPORT_JRXML
+        );
+        System.out.println("Dynamic Report сгенерирован\n");
     }
 }

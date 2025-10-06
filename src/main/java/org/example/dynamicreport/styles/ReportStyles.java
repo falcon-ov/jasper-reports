@@ -57,16 +57,6 @@ public class ReportStyles {
                 .setBorder(stl.pen1Point());
     }
 
-    // Стили для crosstab
-    public static StyleBuilder getCrosstabHeaderStyle() {
-        return stl.style()
-                .bold()
-                .setFontSize(12)
-                .setTabStopWidth(25)
-                .setHorizontalTextAlignment(HorizontalTextAlignment.CENTER)
-                .setVerticalTextAlignment(VerticalTextAlignment.MIDDLE);
-    }
-
     public static StyleBuilder getCrosstabCellStyle() {
         return stl.style()
                 .setFontSize(10)
