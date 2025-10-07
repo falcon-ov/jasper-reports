@@ -49,33 +49,34 @@ public class HolidayChartBuilder {
 
     }
 
-    /**
-     * Подготавливает данные для графика - подсчитывает праздники по месяцам.
-     * @param holidays Список праздников
-     * @return DRDataSource с данными для чарта
-     */
+    private static final int MONTHS_IN_YEAR = 12;
+
     private static DRDataSource prepareChartData(List<Holiday> holidays) {
         Map<String, int[]> monthCounts = HolidayDataProvider.getMonthCountsByCountry(holidays);
 
-        int[] italiaMonths = monthCounts.getOrDefault("Italia", new int[13]);
-        int[] moldaviaMonths = monthCounts.getOrDefault("Moldavia", new int[13]);
-
         DRDataSource chartDataSource = new DRDataSource("month", "count", "country");
-        for (int i = 1; i <= 12; i++) {
-            int total = italiaMonths[i] + moldaviaMonths[i];
-            if (total == 0) {
-                continue;
-            }
 
-            String monthLabel = i + ". " + Month.of(i).name().substring(0, 1).toUpperCase() + Month.of(i).name().substring(1).toLowerCase();
-            if (italiaMonths[i] > 0) {
-                chartDataSource.add(monthLabel, italiaMonths[i], "Italia");
-            }
-            if (moldaviaMonths[i] > 0) {
-                chartDataSource.add(monthLabel, moldaviaMonths[i], "Moldavia");
+        for (int month = 1; month <= MONTHS_IN_YEAR; month++) {
+            String monthLabel = formatMonth(month);
+
+            for (Map.Entry<String, int[]> entry : monthCounts.entrySet()) {
+                String country = entry.getKey();
+                int[] months = entry.getValue();
+
+                if (month < months.length && months[month] > 0) {
+                    chartDataSource.add(monthLabel, months[month], country);
+                }
             }
         }
+
         return chartDataSource;
     }
+
+    private static String formatMonth(int month) {
+        // Example: "1. January"
+        return month + ". " + Month.of(month).name().substring(0, 1).toUpperCase()
+                + Month.of(month).name().substring(1).toLowerCase();
+    }
+
 
 }

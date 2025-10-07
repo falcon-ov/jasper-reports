@@ -9,12 +9,19 @@ import java.awt.Color;
 import static net.sf.dynamicreports.report.builder.DynamicReports.stl;
 
 /**
- * Централизованное управление стилями для отчетов.
- * Обеспечивает консистентный внешний вид всех генерируемых документов.
+ * Centralized style management for reports.
+ * <p>
+ * Provides reusable {@link StyleBuilder} definitions to ensure
+ * a consistent look and feel across all generated documents.
+ * </p>
  */
 public class ReportStyles {
 
-    // Стили для заголовков
+    /**
+     * Style for the main report title.
+     *
+     * @return a bold, centered style with large font size
+     */
     public static StyleBuilder getTitleStyle() {
         return stl.style()
                 .bold()
@@ -23,6 +30,11 @@ public class ReportStyles {
                 .setVerticalTextAlignment(VerticalTextAlignment.MIDDLE);
     }
 
+    /**
+     * Style for page headers.
+     *
+     * @return a centered style with medium font size
+     */
     public static StyleBuilder getHeaderStyle() {
         return stl.style()
                 .setFontSize(16)
@@ -30,6 +42,11 @@ public class ReportStyles {
                 .setVerticalTextAlignment(VerticalTextAlignment.MIDDLE);
     }
 
+    /**
+     * Style for sub-headers.
+     *
+     * @return a bold, centered style with slightly smaller font size
+     */
     public static StyleBuilder getSubHeaderStyle() {
         return stl.style()
                 .bold()
@@ -38,7 +55,11 @@ public class ReportStyles {
                 .setVerticalTextAlignment(VerticalTextAlignment.MIDDLE);
     }
 
-    // Стили для таблиц
+    /**
+     * Style for column headers in tables.
+     *
+     * @return a bold style with borders and light gray background
+     */
     public static StyleBuilder getColumnHeaderStyle() {
         return stl.style()
                 .bold()
@@ -49,6 +70,11 @@ public class ReportStyles {
                 .setBackgroundColor(Color.LIGHT_GRAY);
     }
 
+    /**
+     * Style for detail rows in tables.
+     *
+     * @return a centered style with borders
+     */
     public static StyleBuilder getDetailStyle() {
         return stl.style()
                 .setFontSize(14)
@@ -57,6 +83,11 @@ public class ReportStyles {
                 .setBorder(stl.pen1Point());
     }
 
+    /**
+     * Style for crosstab cells.
+     *
+     * @return a compact style with borders and tab stop width
+     */
     public static StyleBuilder getCrosstabCellStyle() {
         return stl.style()
                 .setFontSize(10)
@@ -66,7 +97,11 @@ public class ReportStyles {
                 .setTabStopWidth(75);
     }
 
-    // Стили для footer
+    /**
+     * Style for footers.
+     *
+     * @return a centered style with medium font size
+     */
     public static StyleBuilder getFooterStyle() {
         return stl.style()
                 .setFontSize(14)
@@ -74,6 +109,11 @@ public class ReportStyles {
                 .setVerticalTextAlignment(VerticalTextAlignment.MIDDLE);
     }
 
+    /**
+     * Style for summary sections.
+     *
+     * @return a centered style with smaller font size
+     */
     public static StyleBuilder getSummaryStyle() {
         return stl.style()
                 .setFontSize(12)
@@ -81,7 +121,11 @@ public class ReportStyles {
                 .setVerticalTextAlignment(VerticalTextAlignment.MIDDLE);
     }
 
-    // Стиль для изображений
+    /**
+     * Style for images (e.g., logos).
+     *
+     * @return a right-aligned style for images
+     */
     public static StyleBuilder getImageStyle() {
         return stl.style()
                 .setHorizontalTextAlignment(HorizontalTextAlignment.RIGHT);

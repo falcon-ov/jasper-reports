@@ -1,12 +1,9 @@
 package org.example.dynamicreport;
 
 import net.sf.dynamicreports.jasper.builder.JasperReportBuilder;
-import net.sf.dynamicreports.report.base.expression.AbstractSimpleExpression;
 import net.sf.dynamicreports.report.builder.component.ComponentBuilder;
 import net.sf.dynamicreports.report.constant.HorizontalTextAlignment;
 import net.sf.dynamicreports.report.constant.PageType;
-import net.sf.dynamicreports.report.constant.VerticalTextAlignment;
-import net.sf.dynamicreports.report.definition.ReportParameters;
 import net.sf.dynamicreports.report.exception.DRException;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import org.example.data.HolidayDataProvider;
@@ -23,15 +20,35 @@ import java.util.List;
 import static net.sf.dynamicreports.report.builder.DynamicReports.*;
 
 /**
- * Генератор динамического отчета о праздниках.
+ * Generates a dynamic holiday report using the DynamicReports library.
+ * <p>
+ * This class demonstrates how to build a report programmatically with
+ * custom headers, footers, summary, and styling. The report can be exported
+ * both as PDF and JRXML.
+ * </p>
  */
 public class HolidayDynamicReport {
 
+    /**
+     * Builds a {@link JasperReportBuilder} instance for the holiday report.
+     * <p>
+     * The report includes:
+     * <ul>
+     *     <li>Title with logo (only on the first page)</li>
+     *     <li>Page header with logo (on subsequent pages)</li>
+     *     <li>Column headers for country, date, and name</li>
+     *     <li>Detail rows displaying holiday data</li>
+     *     <li>Column footer, page footer, and summary sections</li>
+     * </ul>
+     *
+     * @param holidays list of {@link Holiday} objects to be displayed
+     * @return a configured {@link JasperReportBuilder}
+     */
     public static JasperReportBuilder buildReport(List<Holiday> holidays) {
-        // Загружаем логотип
+        // Load logo
         BufferedImage logoImage = ResourceLoader.loadLogo();
 
-        // Заголовок (title)
+        // Title
         ComponentBuilder<?, ?> titleComponent = cmp.verticalList(
                 cmp.horizontalList(
                         cmp.filler().setFixedWidth(410),
@@ -51,7 +68,7 @@ public class HolidayDynamicReport {
                 )
         ).setFixedHeight(99);
 
-        // Заголовок страницы (pageHeader)
+        // Page Header
         ComponentBuilder<?, ?> pageHeaderComponent = cmp.verticalList(
                 cmp.horizontalList(
                         cmp.filler().setFixedWidth(410),
@@ -71,7 +88,7 @@ public class HolidayDynamicReport {
                 )
         ).setFixedHeight(50);
 
-        // Заголовки колонок (columnHeader)
+        // Column Header
         ComponentBuilder<?, ?> columnHeaderComponent = cmp.horizontalList(
                 cmp.filler().setFixedWidth(130),
                 cmp.text("Country").setStyle(ReportStyles.getColumnHeaderStyle()).setFixedDimension(100, 40),
@@ -79,7 +96,7 @@ public class HolidayDynamicReport {
                 cmp.text("Name").setStyle(ReportStyles.getColumnHeaderStyle()).setFixedDimension(100, 40)
         ).setFixedHeight(40);
 
-        // Детали (detail) — вывод полей $F{country}, $F{date}, $F{name}
+        // Detail rows
         ComponentBuilder<?, ?> detailComponent = cmp.horizontalList(
                 cmp.filler().setFixedWidth(130),
                 cmp.text(exp.jasperSyntax("$F{country}", String.class))
@@ -120,7 +137,7 @@ public class HolidayDynamicReport {
                         .setHorizontalTextAlignment(HorizontalTextAlignment.CENTER)
         ).setFixedHeight(42);
 
-        // Настройка отчёта
+        // Report configuration
         return report()
                 .setPageFormat(PageType.A4)
                 .setPageMargin(margin(20))
@@ -139,7 +156,13 @@ public class HolidayDynamicReport {
                 .setDataSource(new JRBeanCollectionDataSource(holidays));
     }
 
-
+    /**
+     * Generates the holiday report and exports it to PDF and JRXML.
+     *
+     * @param holidays list of {@link Holiday} objects
+     * @param pdfPath  output path for the generated PDF
+     * @param jrxmlPath output path for the generated JRXML
+     */
     public static void generateReport(List<Holiday> holidays, String pdfPath, String jrxmlPath) {
         try {
             JasperReportBuilder report = buildReport(holidays);
@@ -157,14 +180,22 @@ public class HolidayDynamicReport {
         }
     }
 
+    /**
+     * Entry point for standalone execution.
+     * <p>
+     * Runs the dynamic report generation using {@link HolidayDataProvider}.
+     * </p>
+     *
+     * @param args command-line arguments (not used)
+     */
     public static void main(String[] args) {
-        System.out.println("\n[Генерация Dynamic Report...]");
+        System.out.println("\n[Generating Dynamic Report...]");
         List<Holiday> holidays = HolidayDataProvider.getAllHolidays();
         HolidayDynamicReport.generateReport(
                 holidays,
                 PathConstants.DYNAMIC_REPORT_PDF,
                 PathConstants.DYNAMIC_REPORT_JRXML
         );
-        System.out.println("Dynamic Report сгенерирован\n");
+        System.out.println("Dynamic Report generated\n");
     }
 }

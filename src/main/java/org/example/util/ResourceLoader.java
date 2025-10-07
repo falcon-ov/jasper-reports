@@ -5,14 +5,18 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 
-/**
- * Утилита для загрузки ресурсов (изображений и т.д.)
- */
+
 public class ResourceLoader {
 
     /**
-     * Загружает логотип только из resources (classpath).
-     * @return BufferedImage или null, если файл не найден или произошла ошибка
+     * Loads the application logo from the classpath.
+     * <p>
+     * The logo path is defined in {@link PathConstants#LOGO_RESOURCE}.
+     * This method attempts to read the image as a {@link BufferedImage}.
+     * </p>
+     *
+     * @return the loaded {@link BufferedImage}, or {@code null} if the file
+     *         was not found or an error occurred during loading
      */
     public static BufferedImage loadLogo() {
         String resourcePath = PathConstants.LOGO_RESOURCE;

@@ -7,10 +7,10 @@
 	<origin band="detail"/>
 	<origin band="pageFooter"/>
 	<origin band="summary"/>
-	<style name="style_26_" hTextAlign="Right"/>
-	<style name="style_28_" hTextAlign="Center" vTextAlign="Middle" fontName="SansSerif" fontSize="24" isBold="true"/>
-	<style name="style_30_" hTextAlign="Center" vTextAlign="Middle" fontName="SansSerif" fontSize="14"/>
-	<style name="style_32_" hTextAlign="Center" vTextAlign="Middle" fontName="SansSerif" fontSize="10">
+	<style name="style_66_" hTextAlign="Right"/>
+	<style name="style_68_" hTextAlign="Center" vTextAlign="Middle" fontName="SansSerif" fontSize="24" isBold="true"/>
+	<style name="style_70_" hTextAlign="Center" vTextAlign="Middle" fontName="SansSerif" fontSize="14"/>
+	<style name="style_72_" hTextAlign="Center" vTextAlign="Middle" fontName="SansSerif" fontSize="10">
 		<box>
 			<topPen lineWidth="1.0" lineStyle="Solid"/>
 			<leftPen lineWidth="1.0" lineStyle="Solid"/>
@@ -19,8 +19,8 @@
 		</box>
 		<paragraph tabStopWidth="75"/>
 	</style>
-	<style name="style_34_" fontName="SansSerif" fontSize="0"/>
-	<style name="style_36_" hTextAlign="Center" vTextAlign="Middle" fontName="SansSerif" fontSize="10">
+	<style name="style_74_" fontName="SansSerif" fontSize="0"/>
+	<style name="style_76_" hTextAlign="Center" vTextAlign="Middle" fontName="SansSerif" fontSize="10">
 		<box>
 			<topPen lineWidth="1.0" lineStyle="Solid"/>
 			<leftPen lineWidth="1.0" lineStyle="Solid"/>
@@ -29,7 +29,7 @@
 		</box>
 		<paragraph tabStopWidth="75"/>
 	</style>
-	<style name="style_39_" hTextAlign="Center" vTextAlign="Middle" fontName="SansSerif" fontSize="10">
+	<style name="style_79_" hTextAlign="Center" vTextAlign="Middle" fontName="SansSerif" fontSize="10">
 		<box>
 			<topPen lineWidth="1.0" lineStyle="Solid"/>
 			<leftPen lineWidth="1.0" lineStyle="Solid"/>
@@ -38,7 +38,7 @@
 		</box>
 		<paragraph tabStopWidth="75"/>
 	</style>
-	<style name="style_41_" hTextAlign="Center" vTextAlign="Middle" fontName="SansSerif" fontSize="10">
+	<style name="style_81_" hTextAlign="Center" vTextAlign="Middle" fontName="SansSerif" fontSize="10">
 		<box>
 			<topPen lineWidth="1.0" lineStyle="Solid"/>
 			<leftPen lineWidth="1.0" lineStyle="Solid"/>
@@ -47,7 +47,7 @@
 		</box>
 		<paragraph tabStopWidth="75"/>
 	</style>
-	<style name="style_43_" hTextAlign="Center" vTextAlign="Middle" fontName="SansSerif" fontSize="10">
+	<style name="style_83_" hTextAlign="Center" vTextAlign="Middle" fontName="SansSerif" fontSize="10">
 		<box>
 			<topPen lineWidth="1.0" lineStyle="Solid"/>
 			<leftPen lineWidth="1.0" lineStyle="Solid"/>
@@ -56,7 +56,7 @@
 		</box>
 		<paragraph tabStopWidth="75"/>
 	</style>
-	<style name="style_45_" hTextAlign="Center" vTextAlign="Middle" fontName="SansSerif" fontSize="10">
+	<style name="style_85_" hTextAlign="Center" vTextAlign="Middle" fontName="SansSerif" fontSize="10">
 		<box>
 			<topPen lineWidth="1.0" lineStyle="Solid"/>
 			<leftPen lineWidth="1.0" lineStyle="Solid"/>
@@ -65,15 +65,15 @@
 		</box>
 		<paragraph tabStopWidth="75"/>
 	</style>
-	<style name="style_49_" hTextAlign="Center" vTextAlign="Middle" fontName="SansSerif" fontSize="14" isBold="true"/>
-	<style name="style_60_" forecolor="#000000" fontName="SansSerif" fontSize="10">
+	<style name="style_89_" hTextAlign="Center" vTextAlign="Middle" fontName="SansSerif" fontSize="14" isBold="true"/>
+	<style name="style_100_" forecolor="#000000" fontName="SansSerif" fontSize="10">
 		<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2"/>
 	</style>
 	<page>
 		<frame>
-			<reportElement uuid="8a7d619d-1648-4564-be5d-dbc29f1f8279" key="title.list2" x="20" y="20" width="802" height="40" origin="0" srcId="1" printId="1"/>
+			<reportElement uuid="98ba169b-f230-4d30-bd33-50cb1ca65939" key="title.list2" x="20" y="20" width="802" height="40" origin="0" srcId="1" printId="1"/>
 			<image onErrorType="Blank">
-				<reportElement uuid="b3bd9243-ecdf-4aa9-8fb5-5417c3c8eb32" key="title.image1" style="style_26_" x="662" y="0" width="140" height="30" origin="0" srcId="2" printId="1"/>
+				<reportElement uuid="3088ebc0-c201-476d-9b8f-8748859495ac" key="title.image1" style="style_66_" x="662" y="0" width="140" height="30" origin="0" srcId="2" printId="1"/>
 				<imageSource isEmbedded="true">
 					<![CDATA[/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
 HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy
@@ -500,30 +500,30 @@ KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//Z]]>
 			</image>
 		</frame>
 		<frame>
-			<reportElement uuid="440283c2-06cf-4be3-bdda-20dfdaf36851" key="title.list3" x="20" y="60" width="802" height="40" origin="0" srcId="3" printId="1"/>
+			<reportElement uuid="04da3ed6-a333-4a29-a277-5141432fba82" key="title.list3" x="20" y="60" width="802" height="40" origin="0" srcId="3" printId="1"/>
 			<text textAlignment="Center" textHeight="30.1875" lineSpacingFactor="1.2578125" leadingOffset="-5.2734375">
-				<reportElement uuid="12d7a849-1921-449b-baf0-b029e5bbf7e4" key="title.textField1" style="style_28_" x="0" y="0" width="802" height="40" origin="0" srcId="4" printId="1"/>
+				<reportElement uuid="ffedfcca-c7b5-4174-aedd-c11c9a7bbd30" key="title.textField1" style="style_68_" x="0" y="0" width="802" height="40" origin="0" srcId="4" printId="1"/>
 				<textContent><![CDATA[Holidays Crosstab & Bar Chart Report 2021]]></textContent>
 			</text>
 		</frame>
 		<frame>
-			<reportElement uuid="766a27bb-f4b3-43f7-980a-08a4beee1585" key="summary.list2" x="20" y="143" width="802" height="64" origin="3" srcId="7" printId="1"/>
+			<reportElement uuid="106bdc51-2dee-4ca2-ba8d-db8910a89617" key="summary.list2" x="20" y="143" width="802" height="64" origin="3" srcId="7" printId="1"/>
 			<frame>
 				<reportElement key="summary.crosstab1" x="50" y="0" width="600" height="64" origin="3" srcId="8" printId="1">
 					<property name="net.sf.jasperreports.export.accessibility.tag" value="table"/>
-					<property name="net.sf.jasperreports.export.crosstab.crosstabId" value="09574c61-2d77-441d-b92a-046d415b39a9.0"/>
+					<property name="net.sf.jasperreports.export.crosstab.crosstabId" value="fb9fc9fd-f390-4153-a7ae-a9529ce1f6b6.0"/>
 				</reportElement>
 				<genericElement>
 					<reportElement x="0" y="0" width="1" height="1" origin="3" srcId="8" printId="2"/>
 					<genericElementType namespace="http://jasperreports.sourceforge.net/jasperreports" name="crosstabInteractiveElement"/>
 					<genericElementParameter name="crosstabId">
 						<genericElementParameterValue class="java.lang.String">
-							<![CDATA[09574c61-2d77-441d-b92a-046d415b39a9]]>
+							<![CDATA[fb9fc9fd-f390-4153-a7ae-a9529ce1f6b6]]>
 						</genericElementParameterValue>
 					</genericElementParameter>
 					<genericElementParameter name="crosstabFragmentId">
 						<genericElementParameterValue class="java.lang.String">
-							<![CDATA[09574c61-2d77-441d-b92a-046d415b39a9.0]]>
+							<![CDATA[fb9fc9fd-f390-4153-a7ae-a9529ce1f6b6.0]]>
 						</genericElementParameterValue>
 					</genericElementParameter>
 					<genericElementParameter name="startColumnIndex">
@@ -574,7 +574,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtcrossfloating"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
-						<reportElement uuid="d6e115d0-a676-4346-b61a-a5c981186aa8" key="summary.crosstab1.headercell.textField1" style="style_32_" x="0" y="0" width="100" height="16" origin="3" srcId="9" printId="1"/>
+						<reportElement uuid="39452319-4782-4a30-a1f2-4397c44cb3cd" key="summary.crosstab1.headercell.textField1" style="style_72_" x="0" y="0" width="100" height="16" origin="3" srcId="9" printId="1"/>
 						<textContent><![CDATA[Country / Month]]></textContent>
 					</text>
 				</frame>
@@ -585,11 +585,11 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtcolfloating jrxtcolheader"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
-						<reportElement uuid="3edcb612-8a5e-4107-9438-ce145cea7b5c" key="summary.crosstab1.group_crosstabGroup_2_.header1" style="style_36_" x="0" y="0" width="50" height="16" origin="3" srcId="16" printId="1"/>
+						<reportElement uuid="20ec6ca5-fb7a-4fc2-a04b-7a6245dc31d1" key="summary.crosstab1.group_crosstabGroup_50_.header1" style="style_76_" x="0" y="0" width="50" height="16" origin="3" srcId="16" printId="1"/>
 						<textContent><![CDATA[1]]></textContent>
 					</text>
 					<text textHeight="0.0">
-						<reportElement uuid="c3e867eb-c83b-4133-8d37-0575b3736104" key="summary.crosstab1.group_crosstabGroup_2_.titleheader.crosstabMeasure_14_1" style="style_34_" x="0" y="16" width="50" height="0" origin="3" srcId="17" printId="1"/>
+						<reportElement uuid="7646e836-988e-46fc-abf0-2d591a7c0558" key="summary.crosstab1.group_crosstabGroup_50_.titleheader.crosstabMeasure_54_1" style="style_74_" x="0" y="16" width="50" height="0" origin="3" srcId="17" printId="1"/>
 						<textContent><![CDATA[]]></textContent>
 					</text>
 				</frame>
@@ -600,11 +600,11 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtcolfloating jrxtcolheader"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
-						<reportElement uuid="3edcb612-8a5e-4107-9438-ce145cea7b5c" key="summary.crosstab1.group_crosstabGroup_2_.header1" style="style_36_" x="0" y="0" width="50" height="16" origin="3" srcId="16" printId="2"/>
+						<reportElement uuid="20ec6ca5-fb7a-4fc2-a04b-7a6245dc31d1" key="summary.crosstab1.group_crosstabGroup_50_.header1" style="style_76_" x="0" y="0" width="50" height="16" origin="3" srcId="16" printId="2"/>
 						<textContent><![CDATA[3]]></textContent>
 					</text>
 					<text textHeight="0.0">
-						<reportElement uuid="c3e867eb-c83b-4133-8d37-0575b3736104" key="summary.crosstab1.group_crosstabGroup_2_.titleheader.crosstabMeasure_14_1" style="style_34_" x="0" y="16" width="50" height="0" origin="3" srcId="17" printId="2"/>
+						<reportElement uuid="7646e836-988e-46fc-abf0-2d591a7c0558" key="summary.crosstab1.group_crosstabGroup_50_.titleheader.crosstabMeasure_54_1" style="style_74_" x="0" y="16" width="50" height="0" origin="3" srcId="17" printId="2"/>
 						<textContent><![CDATA[]]></textContent>
 					</text>
 				</frame>
@@ -615,11 +615,11 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtcolfloating jrxtcolheader"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
-						<reportElement uuid="3edcb612-8a5e-4107-9438-ce145cea7b5c" key="summary.crosstab1.group_crosstabGroup_2_.header1" style="style_36_" x="0" y="0" width="50" height="16" origin="3" srcId="16" printId="3"/>
+						<reportElement uuid="20ec6ca5-fb7a-4fc2-a04b-7a6245dc31d1" key="summary.crosstab1.group_crosstabGroup_50_.header1" style="style_76_" x="0" y="0" width="50" height="16" origin="3" srcId="16" printId="3"/>
 						<textContent><![CDATA[4]]></textContent>
 					</text>
 					<text textHeight="0.0">
-						<reportElement uuid="c3e867eb-c83b-4133-8d37-0575b3736104" key="summary.crosstab1.group_crosstabGroup_2_.titleheader.crosstabMeasure_14_1" style="style_34_" x="0" y="16" width="50" height="0" origin="3" srcId="17" printId="3"/>
+						<reportElement uuid="7646e836-988e-46fc-abf0-2d591a7c0558" key="summary.crosstab1.group_crosstabGroup_50_.titleheader.crosstabMeasure_54_1" style="style_74_" x="0" y="16" width="50" height="0" origin="3" srcId="17" printId="3"/>
 						<textContent><![CDATA[]]></textContent>
 					</text>
 				</frame>
@@ -630,11 +630,11 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtcolfloating jrxtcolheader"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
-						<reportElement uuid="3edcb612-8a5e-4107-9438-ce145cea7b5c" key="summary.crosstab1.group_crosstabGroup_2_.header1" style="style_36_" x="0" y="0" width="50" height="16" origin="3" srcId="16" printId="4"/>
+						<reportElement uuid="20ec6ca5-fb7a-4fc2-a04b-7a6245dc31d1" key="summary.crosstab1.group_crosstabGroup_50_.header1" style="style_76_" x="0" y="0" width="50" height="16" origin="3" srcId="16" printId="4"/>
 						<textContent><![CDATA[5]]></textContent>
 					</text>
 					<text textHeight="0.0">
-						<reportElement uuid="c3e867eb-c83b-4133-8d37-0575b3736104" key="summary.crosstab1.group_crosstabGroup_2_.titleheader.crosstabMeasure_14_1" style="style_34_" x="0" y="16" width="50" height="0" origin="3" srcId="17" printId="4"/>
+						<reportElement uuid="7646e836-988e-46fc-abf0-2d591a7c0558" key="summary.crosstab1.group_crosstabGroup_50_.titleheader.crosstabMeasure_54_1" style="style_74_" x="0" y="16" width="50" height="0" origin="3" srcId="17" printId="4"/>
 						<textContent><![CDATA[]]></textContent>
 					</text>
 				</frame>
@@ -645,11 +645,11 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtcolfloating jrxtcolheader"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
-						<reportElement uuid="3edcb612-8a5e-4107-9438-ce145cea7b5c" key="summary.crosstab1.group_crosstabGroup_2_.header1" style="style_36_" x="0" y="0" width="50" height="16" origin="3" srcId="16" printId="5"/>
+						<reportElement uuid="20ec6ca5-fb7a-4fc2-a04b-7a6245dc31d1" key="summary.crosstab1.group_crosstabGroup_50_.header1" style="style_76_" x="0" y="0" width="50" height="16" origin="3" srcId="16" printId="5"/>
 						<textContent><![CDATA[6]]></textContent>
 					</text>
 					<text textHeight="0.0">
-						<reportElement uuid="c3e867eb-c83b-4133-8d37-0575b3736104" key="summary.crosstab1.group_crosstabGroup_2_.titleheader.crosstabMeasure_14_1" style="style_34_" x="0" y="16" width="50" height="0" origin="3" srcId="17" printId="5"/>
+						<reportElement uuid="7646e836-988e-46fc-abf0-2d591a7c0558" key="summary.crosstab1.group_crosstabGroup_50_.titleheader.crosstabMeasure_54_1" style="style_74_" x="0" y="16" width="50" height="0" origin="3" srcId="17" printId="5"/>
 						<textContent><![CDATA[]]></textContent>
 					</text>
 				</frame>
@@ -660,11 +660,11 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtcolfloating jrxtcolheader"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
-						<reportElement uuid="3edcb612-8a5e-4107-9438-ce145cea7b5c" key="summary.crosstab1.group_crosstabGroup_2_.header1" style="style_36_" x="0" y="0" width="50" height="16" origin="3" srcId="16" printId="6"/>
+						<reportElement uuid="20ec6ca5-fb7a-4fc2-a04b-7a6245dc31d1" key="summary.crosstab1.group_crosstabGroup_50_.header1" style="style_76_" x="0" y="0" width="50" height="16" origin="3" srcId="16" printId="6"/>
 						<textContent><![CDATA[8]]></textContent>
 					</text>
 					<text textHeight="0.0">
-						<reportElement uuid="c3e867eb-c83b-4133-8d37-0575b3736104" key="summary.crosstab1.group_crosstabGroup_2_.titleheader.crosstabMeasure_14_1" style="style_34_" x="0" y="16" width="50" height="0" origin="3" srcId="17" printId="6"/>
+						<reportElement uuid="7646e836-988e-46fc-abf0-2d591a7c0558" key="summary.crosstab1.group_crosstabGroup_50_.titleheader.crosstabMeasure_54_1" style="style_74_" x="0" y="16" width="50" height="0" origin="3" srcId="17" printId="6"/>
 						<textContent><![CDATA[]]></textContent>
 					</text>
 				</frame>
@@ -675,11 +675,11 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtcolfloating jrxtcolheader"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
-						<reportElement uuid="3edcb612-8a5e-4107-9438-ce145cea7b5c" key="summary.crosstab1.group_crosstabGroup_2_.header1" style="style_36_" x="0" y="0" width="50" height="16" origin="3" srcId="16" printId="7"/>
+						<reportElement uuid="20ec6ca5-fb7a-4fc2-a04b-7a6245dc31d1" key="summary.crosstab1.group_crosstabGroup_50_.header1" style="style_76_" x="0" y="0" width="50" height="16" origin="3" srcId="16" printId="7"/>
 						<textContent><![CDATA[10]]></textContent>
 					</text>
 					<text textHeight="0.0">
-						<reportElement uuid="c3e867eb-c83b-4133-8d37-0575b3736104" key="summary.crosstab1.group_crosstabGroup_2_.titleheader.crosstabMeasure_14_1" style="style_34_" x="0" y="16" width="50" height="0" origin="3" srcId="17" printId="7"/>
+						<reportElement uuid="7646e836-988e-46fc-abf0-2d591a7c0558" key="summary.crosstab1.group_crosstabGroup_50_.titleheader.crosstabMeasure_54_1" style="style_74_" x="0" y="16" width="50" height="0" origin="3" srcId="17" printId="7"/>
 						<textContent><![CDATA[]]></textContent>
 					</text>
 				</frame>
@@ -690,11 +690,11 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtcolfloating jrxtcolheader"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
-						<reportElement uuid="3edcb612-8a5e-4107-9438-ce145cea7b5c" key="summary.crosstab1.group_crosstabGroup_2_.header1" style="style_36_" x="0" y="0" width="50" height="16" origin="3" srcId="16" printId="8"/>
+						<reportElement uuid="20ec6ca5-fb7a-4fc2-a04b-7a6245dc31d1" key="summary.crosstab1.group_crosstabGroup_50_.header1" style="style_76_" x="0" y="0" width="50" height="16" origin="3" srcId="16" printId="8"/>
 						<textContent><![CDATA[11]]></textContent>
 					</text>
 					<text textHeight="0.0">
-						<reportElement uuid="c3e867eb-c83b-4133-8d37-0575b3736104" key="summary.crosstab1.group_crosstabGroup_2_.titleheader.crosstabMeasure_14_1" style="style_34_" x="0" y="16" width="50" height="0" origin="3" srcId="17" printId="8"/>
+						<reportElement uuid="7646e836-988e-46fc-abf0-2d591a7c0558" key="summary.crosstab1.group_crosstabGroup_50_.titleheader.crosstabMeasure_54_1" style="style_74_" x="0" y="16" width="50" height="0" origin="3" srcId="17" printId="8"/>
 						<textContent><![CDATA[]]></textContent>
 					</text>
 				</frame>
@@ -705,11 +705,11 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtcolfloating jrxtcolheader"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
-						<reportElement uuid="3edcb612-8a5e-4107-9438-ce145cea7b5c" key="summary.crosstab1.group_crosstabGroup_2_.header1" style="style_36_" x="0" y="0" width="50" height="16" origin="3" srcId="16" printId="9"/>
+						<reportElement uuid="20ec6ca5-fb7a-4fc2-a04b-7a6245dc31d1" key="summary.crosstab1.group_crosstabGroup_50_.header1" style="style_76_" x="0" y="0" width="50" height="16" origin="3" srcId="16" printId="9"/>
 						<textContent><![CDATA[12]]></textContent>
 					</text>
 					<text textHeight="0.0">
-						<reportElement uuid="c3e867eb-c83b-4133-8d37-0575b3736104" key="summary.crosstab1.group_crosstabGroup_2_.titleheader.crosstabMeasure_14_1" style="style_34_" x="0" y="16" width="50" height="0" origin="3" srcId="17" printId="9"/>
+						<reportElement uuid="7646e836-988e-46fc-abf0-2d591a7c0558" key="summary.crosstab1.group_crosstabGroup_50_.titleheader.crosstabMeasure_54_1" style="style_74_" x="0" y="16" width="50" height="0" origin="3" srcId="17" printId="9"/>
 						<textContent><![CDATA[]]></textContent>
 					</text>
 				</frame>
@@ -720,11 +720,11 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtcolfloating jrxtcolheader"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
-						<reportElement uuid="8828c715-c330-44ed-baca-8132a2849293" key="summary.crosstab1.group_crosstabGroup_2_.totalheader1" style="style_39_" x="0" y="0" width="50" height="16" origin="3" srcId="19" printId="1"/>
+						<reportElement uuid="de0b498a-efc5-49ad-9516-970459b1a6fb" key="summary.crosstab1.group_crosstabGroup_50_.totalheader1" style="style_79_" x="0" y="0" width="50" height="16" origin="3" srcId="19" printId="1"/>
 						<textContent><![CDATA[Total]]></textContent>
 					</text>
 					<text textHeight="0.0">
-						<reportElement uuid="2cff136e-aae0-4b00-88e5-00eef69cfddc" key="summary.crosstab1.group_crosstabGroup_2_.titletotalheader.crosstabMeasure_14_1" style="style_34_" x="0" y="16" width="50" height="0" origin="3" srcId="20" printId="1"/>
+						<reportElement uuid="ffb520f3-522f-4de2-82b8-3a57b3c76fc2" key="summary.crosstab1.group_crosstabGroup_50_.titletotalheader.crosstabMeasure_54_1" style="style_74_" x="0" y="16" width="50" height="0" origin="3" srcId="20" printId="1"/>
 						<textContent><![CDATA[]]></textContent>
 					</text>
 				</frame>
@@ -735,7 +735,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtrowfloating jrxtrowheader"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
-						<reportElement uuid="b29bd837-07c2-4e4d-acab-4d40d90eb74d" key="summary.crosstab1.group_crosstabGroup_1_.header1" style="style_41_" x="0" y="0" width="100" height="16" origin="3" srcId="11" printId="1"/>
+						<reportElement uuid="349225d7-479e-4251-bb24-8b9ccdc2ec44" key="summary.crosstab1.group_crosstabGroup_49_.header1" style="style_81_" x="0" y="0" width="100" height="16" origin="3" srcId="11" printId="1"/>
 						<textContent><![CDATA[Italia]]></textContent>
 					</text>
 				</frame>
@@ -746,7 +746,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="48b95b50-f5cc-4f30-98de-b7afb9aa2086" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="1"/>
+						<reportElement uuid="3e634ab5-1438-44ce-a3c4-7fd36009e053" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="1"/>
 						<textContent><![CDATA[2]]></textContent>
 					</text>
 				</frame>
@@ -757,7 +757,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="48b95b50-f5cc-4f30-98de-b7afb9aa2086" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="2"/>
+						<reportElement uuid="3e634ab5-1438-44ce-a3c4-7fd36009e053" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="2"/>
 						<textContent><![CDATA[0]]></textContent>
 					</text>
 				</frame>
@@ -768,7 +768,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="48b95b50-f5cc-4f30-98de-b7afb9aa2086" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="3"/>
+						<reportElement uuid="3e634ab5-1438-44ce-a3c4-7fd36009e053" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="3"/>
 						<textContent><![CDATA[3]]></textContent>
 					</text>
 				</frame>
@@ -779,7 +779,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="48b95b50-f5cc-4f30-98de-b7afb9aa2086" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="4"/>
+						<reportElement uuid="3e634ab5-1438-44ce-a3c4-7fd36009e053" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="4"/>
 						<textContent><![CDATA[1]]></textContent>
 					</text>
 				</frame>
@@ -790,7 +790,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="48b95b50-f5cc-4f30-98de-b7afb9aa2086" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="5"/>
+						<reportElement uuid="3e634ab5-1438-44ce-a3c4-7fd36009e053" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="5"/>
 						<textContent><![CDATA[1]]></textContent>
 					</text>
 				</frame>
@@ -801,7 +801,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="48b95b50-f5cc-4f30-98de-b7afb9aa2086" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="6"/>
+						<reportElement uuid="3e634ab5-1438-44ce-a3c4-7fd36009e053" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="6"/>
 						<textContent><![CDATA[1]]></textContent>
 					</text>
 				</frame>
@@ -812,7 +812,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="48b95b50-f5cc-4f30-98de-b7afb9aa2086" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="7"/>
+						<reportElement uuid="3e634ab5-1438-44ce-a3c4-7fd36009e053" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="7"/>
 						<textContent><![CDATA[0]]></textContent>
 					</text>
 				</frame>
@@ -823,7 +823,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="48b95b50-f5cc-4f30-98de-b7afb9aa2086" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="8"/>
+						<reportElement uuid="3e634ab5-1438-44ce-a3c4-7fd36009e053" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="8"/>
 						<textContent><![CDATA[1]]></textContent>
 					</text>
 				</frame>
@@ -834,7 +834,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="48b95b50-f5cc-4f30-98de-b7afb9aa2086" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="9"/>
+						<reportElement uuid="3e634ab5-1438-44ce-a3c4-7fd36009e053" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="9"/>
 						<textContent><![CDATA[3]]></textContent>
 					</text>
 				</frame>
@@ -845,7 +845,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="5af2fd9c-0d76-4cef-9bba-2b209c6f48ba" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]_columngroup[crosstabGroup_2_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="26" printId="1"/>
+						<reportElement uuid="bec3eec7-e8a3-4a4b-8379-36b74b8193e2" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]_columngroup[crosstabGroup_50_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="26" printId="1"/>
 						<textContent><![CDATA[12]]></textContent>
 					</text>
 				</frame>
@@ -856,7 +856,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtrowfloating jrxtrowheader"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
-						<reportElement uuid="b29bd837-07c2-4e4d-acab-4d40d90eb74d" key="summary.crosstab1.group_crosstabGroup_1_.header1" style="style_41_" x="0" y="0" width="100" height="16" origin="3" srcId="11" printId="2"/>
+						<reportElement uuid="349225d7-479e-4251-bb24-8b9ccdc2ec44" key="summary.crosstab1.group_crosstabGroup_49_.header1" style="style_81_" x="0" y="0" width="100" height="16" origin="3" srcId="11" printId="2"/>
 						<textContent><![CDATA[Moldavia]]></textContent>
 					</text>
 				</frame>
@@ -867,7 +867,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="48b95b50-f5cc-4f30-98de-b7afb9aa2086" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="10"/>
+						<reportElement uuid="3e634ab5-1438-44ce-a3c4-7fd36009e053" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="10"/>
 						<textContent><![CDATA[3]]></textContent>
 					</text>
 				</frame>
@@ -878,7 +878,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="48b95b50-f5cc-4f30-98de-b7afb9aa2086" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="11"/>
+						<reportElement uuid="3e634ab5-1438-44ce-a3c4-7fd36009e053" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="11"/>
 						<textContent><![CDATA[1]]></textContent>
 					</text>
 				</frame>
@@ -889,7 +889,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="48b95b50-f5cc-4f30-98de-b7afb9aa2086" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="12"/>
+						<reportElement uuid="3e634ab5-1438-44ce-a3c4-7fd36009e053" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="12"/>
 						<textContent><![CDATA[0]]></textContent>
 					</text>
 				</frame>
@@ -900,7 +900,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="48b95b50-f5cc-4f30-98de-b7afb9aa2086" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="13"/>
+						<reportElement uuid="3e634ab5-1438-44ce-a3c4-7fd36009e053" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="13"/>
 						<textContent><![CDATA[5]]></textContent>
 					</text>
 				</frame>
@@ -911,7 +911,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="48b95b50-f5cc-4f30-98de-b7afb9aa2086" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="14"/>
+						<reportElement uuid="3e634ab5-1438-44ce-a3c4-7fd36009e053" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="14"/>
 						<textContent><![CDATA[1]]></textContent>
 					</text>
 				</frame>
@@ -922,7 +922,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="48b95b50-f5cc-4f30-98de-b7afb9aa2086" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="15"/>
+						<reportElement uuid="3e634ab5-1438-44ce-a3c4-7fd36009e053" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="15"/>
 						<textContent><![CDATA[2]]></textContent>
 					</text>
 				</frame>
@@ -933,7 +933,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="48b95b50-f5cc-4f30-98de-b7afb9aa2086" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="16"/>
+						<reportElement uuid="3e634ab5-1438-44ce-a3c4-7fd36009e053" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="16"/>
 						<textContent><![CDATA[1]]></textContent>
 					</text>
 				</frame>
@@ -944,7 +944,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="48b95b50-f5cc-4f30-98de-b7afb9aa2086" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="17"/>
+						<reportElement uuid="3e634ab5-1438-44ce-a3c4-7fd36009e053" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="17"/>
 						<textContent><![CDATA[0]]></textContent>
 					</text>
 				</frame>
@@ -955,7 +955,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="48b95b50-f5cc-4f30-98de-b7afb9aa2086" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="18"/>
+						<reportElement uuid="3e634ab5-1438-44ce-a3c4-7fd36009e053" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="28" printId="18"/>
 						<textContent><![CDATA[1]]></textContent>
 					</text>
 				</frame>
@@ -966,7 +966,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="5af2fd9c-0d76-4cef-9bba-2b209c6f48ba" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]_columngroup[crosstabGroup_2_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="26" printId="2"/>
+						<reportElement uuid="bec3eec7-e8a3-4a4b-8379-36b74b8193e2" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]_columngroup[crosstabGroup_50_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="26" printId="2"/>
 						<textContent><![CDATA[14]]></textContent>
 					</text>
 				</frame>
@@ -977,7 +977,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtrowfloating jrxtrowheader"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
-						<reportElement uuid="5d120137-725a-47a4-824b-78eca2f2e0ec" key="summary.crosstab1.group_crosstabGroup_1_.totalheader1" style="style_43_" x="0" y="0" width="100" height="16" origin="3" srcId="14" printId="1"/>
+						<reportElement uuid="6495f61b-d42d-4d7f-a743-8f7a09e71220" key="summary.crosstab1.group_crosstabGroup_49_.totalheader1" style="style_83_" x="0" y="0" width="100" height="16" origin="3" srcId="14" printId="1"/>
 						<textContent><![CDATA[Total]]></textContent>
 					</text>
 				</frame>
@@ -988,7 +988,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="1de42b78-9e4e-48f9-a4c0-b98e9b84b157" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]_rowgroup[crosstabGroup_1_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="24" printId="1"/>
+						<reportElement uuid="420e4a75-9a90-4045-a373-acd998d23578" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]_rowgroup[crosstabGroup_49_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="24" printId="1"/>
 						<textContent><![CDATA[5]]></textContent>
 					</text>
 				</frame>
@@ -999,7 +999,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="1de42b78-9e4e-48f9-a4c0-b98e9b84b157" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]_rowgroup[crosstabGroup_1_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="24" printId="2"/>
+						<reportElement uuid="420e4a75-9a90-4045-a373-acd998d23578" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]_rowgroup[crosstabGroup_49_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="24" printId="2"/>
 						<textContent><![CDATA[1]]></textContent>
 					</text>
 				</frame>
@@ -1010,7 +1010,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="1de42b78-9e4e-48f9-a4c0-b98e9b84b157" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]_rowgroup[crosstabGroup_1_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="24" printId="3"/>
+						<reportElement uuid="420e4a75-9a90-4045-a373-acd998d23578" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]_rowgroup[crosstabGroup_49_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="24" printId="3"/>
 						<textContent><![CDATA[3]]></textContent>
 					</text>
 				</frame>
@@ -1021,7 +1021,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="1de42b78-9e4e-48f9-a4c0-b98e9b84b157" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]_rowgroup[crosstabGroup_1_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="24" printId="4"/>
+						<reportElement uuid="420e4a75-9a90-4045-a373-acd998d23578" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]_rowgroup[crosstabGroup_49_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="24" printId="4"/>
 						<textContent><![CDATA[6]]></textContent>
 					</text>
 				</frame>
@@ -1032,7 +1032,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="1de42b78-9e4e-48f9-a4c0-b98e9b84b157" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]_rowgroup[crosstabGroup_1_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="24" printId="5"/>
+						<reportElement uuid="420e4a75-9a90-4045-a373-acd998d23578" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]_rowgroup[crosstabGroup_49_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="24" printId="5"/>
 						<textContent><![CDATA[2]]></textContent>
 					</text>
 				</frame>
@@ -1043,7 +1043,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="1de42b78-9e4e-48f9-a4c0-b98e9b84b157" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]_rowgroup[crosstabGroup_1_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="24" printId="6"/>
+						<reportElement uuid="420e4a75-9a90-4045-a373-acd998d23578" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]_rowgroup[crosstabGroup_49_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="24" printId="6"/>
 						<textContent><![CDATA[3]]></textContent>
 					</text>
 				</frame>
@@ -1054,7 +1054,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="1de42b78-9e4e-48f9-a4c0-b98e9b84b157" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]_rowgroup[crosstabGroup_1_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="24" printId="7"/>
+						<reportElement uuid="420e4a75-9a90-4045-a373-acd998d23578" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]_rowgroup[crosstabGroup_49_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="24" printId="7"/>
 						<textContent><![CDATA[1]]></textContent>
 					</text>
 				</frame>
@@ -1065,7 +1065,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="1de42b78-9e4e-48f9-a4c0-b98e9b84b157" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]_rowgroup[crosstabGroup_1_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="24" printId="8"/>
+						<reportElement uuid="420e4a75-9a90-4045-a373-acd998d23578" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]_rowgroup[crosstabGroup_49_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="24" printId="8"/>
 						<textContent><![CDATA[1]]></textContent>
 					</text>
 				</frame>
@@ -1076,7 +1076,7 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="1de42b78-9e4e-48f9-a4c0-b98e9b84b157" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]_rowgroup[crosstabGroup_1_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="24" printId="9"/>
+						<reportElement uuid="420e4a75-9a90-4045-a373-acd998d23578" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]_rowgroup[crosstabGroup_49_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="24" printId="9"/>
 						<textContent><![CDATA[4]]></textContent>
 					</text>
 				</frame>
@@ -1087,18 +1087,18 @@ AAABc3EAfgAIAXBweHBxAH4AD3g=]]>
 						<property name="net.sf.jasperreports.export.html.class" value="jrxtdatacell"/>
 					</reportElement>
 					<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long" pattern="#,##0">
-						<reportElement uuid="32083aa7-d9b4-4100-9196-565b33630810" key="summary.crosstab1.cell_measure[crosstabMeasure_14_]_rowgroup[crosstabGroup_1_]_columngroup[crosstabGroup_2_]1" style="style_45_" x="0" y="0" width="50" height="16" origin="3" srcId="22" printId="1"/>
+						<reportElement uuid="66610b65-0151-4b92-8a97-f003b7eda916" key="summary.crosstab1.cell_measure[crosstabMeasure_54_]_rowgroup[crosstabGroup_49_]_columngroup[crosstabGroup_50_]1" style="style_85_" x="0" y="0" width="50" height="16" origin="3" srcId="22" printId="1"/>
 						<textContent><![CDATA[26]]></textContent>
 					</text>
 				</frame>
 			</frame>
 		</frame>
 		<text textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719">
-			<reportElement uuid="5ffcad8a-8591-4414-931a-01caf94e13ee" key="summary.textField1" style="style_49_" x="20" y="227" width="802" height="18" origin="3" srcId="30" printId="1"/>
+			<reportElement uuid="f5eea1a6-b744-4e40-939f-2afc05be9bd6" key="summary.textField1" style="style_89_" x="20" y="227" width="802" height="18" origin="3" srcId="30" printId="1"/>
 			<textContent><![CDATA[Number of Holidays per Month]]></textContent>
 		</text>
 		<image>
-			<reportElement uuid="f5255e97-9b88-4789-a19d-61d0003eca35" key="summary.chart1" x="20" y="255" width="802" height="250" origin="3" srcId="31" printId="1">
+			<reportElement uuid="b696b05a-ec66-469a-8b2e-b39620bcfdab" key="summary.chart1" x="20" y="255" width="802" height="250" origin="3" srcId="31" printId="1">
 				<property name="net.sf.jasperreports.export.html.embed.image" value="true"/>
 				<property name="net.sf.jasperreports.export.html.embedded.svg.use.fonts" value="true"/>
 			</reportElement>
@@ -1245,9 +1245,9 @@ d8wrJuaT50nvHUnv50jXdyfX/2Wj5bb3nLT9u7FZMwAAGLSpndy4cGC7TJ53vcKB7VOUkA8AAGDo
 			</imageSource>
 		</image>
 		<frame>
-			<reportElement uuid="cb43f7f9-270d-4a77-8a89-e0d99d4e26bd" key="pageFooter.list1" x="20" y="544" width="481" height="31" origin="2" srcId="5" printId="1"/>
+			<reportElement uuid="a49aa977-d6b4-46de-b8b5-3430c17e021e" key="pageFooter.list1" x="20" y="544" width="481" height="31" origin="2" srcId="5" printId="1"/>
 			<text textAlignment="Center" textHeight="17.609375" lineSpacingFactor="1.2578125" leadingOffset="-3.0761719">
-				<reportElement uuid="81c097a7-4210-4693-9e12-0094b721d703" key="pageFooter.textField1" style="style_30_" x="280" y="0" width="201" height="31" origin="2" srcId="6" printId="1"/>
+				<reportElement uuid="a5afd74b-4813-4df9-afb0-a69aafd9d3d9" key="pageFooter.textField1" style="style_70_" x="280" y="0" width="201" height="31" origin="2" srcId="6" printId="1"/>
 				<textContent><![CDATA[Page Footer]]></textContent>
 			</text>
 		</frame>

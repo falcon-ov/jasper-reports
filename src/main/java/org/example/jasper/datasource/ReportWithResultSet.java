@@ -9,26 +9,47 @@ import java.sql.*;
 import java.util.List;
 
 /**
- * Генерация отчета с использованием JRResultSetDataSource,
- * при этом данные берутся из HolidayDataProvider и вставляются в БД.
+ * Generates a report using {@link JRResultSetDataSource}.
+ * <p>
+ * The data is retrieved from {@link HolidayDataProvider}, inserted into
+ * an in-memory H2 database, and then queried back as a {@link ResultSet}.
+ * This {@link ResultSet} is wrapped in a {@link JRResultSetDataSource}
+ * and used to fill the JasperReport template.
+ * </p>
  */
 public class ReportWithResultSet {
 
+    /**
+     * Generates a JasperReport using {@link JRResultSetDataSource}.
+     * <p>
+     * Steps performed:
+     * <ol>
+     *     <li>Create an in-memory H2 database</li>
+     *     <li>Create a {@code holidays} table</li>
+     *     <li>Insert holiday data from {@link HolidayDataProvider}</li>
+     *     <li>Query the data back into a {@link ResultSet}</li>
+     *     <li>Wrap the {@link ResultSet} in a {@link JRResultSetDataSource}</li>
+     *     <li>Fill the report template defined in {@link PathConstants#HOLIDAYS_JASPER}</li>
+     *     <li>Export the report to PDF at {@link PathConstants#REPORT_RESULTSET_PDF}</li>
+     * </ol>
+     *
+     * @throws Exception if any database or JasperReports operation fails
+     */
     public static void generate() throws Exception {
-        // создаём in-memory H2 базу
+        // Create in-memory H2 database
         try (Connection conn = DriverManager.getConnection("jdbc:h2:mem:testdb", "sa", "");
              Statement st = conn.createStatement()) {
 
-            // создаём таблицу
+            // Create table
             st.execute("CREATE TABLE IF NOT EXISTS holidays(" +
                     "country VARCHAR(64), " +
                     "name VARCHAR(128), " +
                     "date VARCHAR(32))");
 
-            // берём данные из провайдера
+            // Get data from provider
             List<Holiday> holidays = HolidayDataProvider.getAllHolidays();
 
-            // вставляем данные в таблицу
+            // Insert data into table
             try (PreparedStatement ps = conn.prepareStatement(
                     "INSERT INTO holidays(country, name, date) VALUES (?, ?, ?)")) {
                 for (Holiday h : holidays) {
@@ -40,20 +61,20 @@ public class ReportWithResultSet {
                 ps.executeBatch();
             }
 
-            // читаем данные обратно через ResultSet
+            // Query data back
             ResultSet rs = st.executeQuery("SELECT * FROM holidays");
 
-            // оборачиваем в JRResultSetDataSource
+            // Wrap in JRResultSetDataSource
             JRResultSetDataSource dataSource = new JRResultSetDataSource(rs);
 
-            // заполняем отчёт
+            // Fill report
             JasperPrint print = JasperFillManager.fillReport(
                     PathConstants.HOLIDAYS_JASPER,
                     null,
                     dataSource
             );
 
-            // экспортируем в PDF
+            // Export to PDF
             JasperExportManager.exportReportToPdfFile(
                     print,
                     PathConstants.REPORT_RESULTSET_PDF
@@ -64,6 +85,14 @@ public class ReportWithResultSet {
         }
     }
 
+    /**
+     * Entry point for standalone execution.
+     * <p>
+     * Allows running the report generation directly from the command line.
+     * </p>
+     *
+     * @param args command-line arguments (not used)
+     */
     public static void main(String[] args) {
         try {
             generate();

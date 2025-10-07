@@ -25,20 +25,39 @@ import java.util.List;
 import static net.sf.dynamicreports.report.builder.DynamicReports.*;
 
 /**
- * Генератор crosstab-отчета о праздниках с графиком.
+ * Generates a crosstab holiday report with an additional bar chart.
+ * <p>
+ * This report displays the number of holidays per country and month
+ * in a crosstab format, and also includes a bar chart visualization.
+ * </p>
  */
 public class HolidayCrosstabReport {
 
+    /**
+     * Builds a {@link JasperReportBuilder} for the holiday crosstab report.
+     * <p>
+     * The report includes:
+     * <ul>
+     *     <li>A title with logo</li>
+     *     <li>A crosstab grouped by country (rows) and month (columns)</li>
+     *     <li>A summary section with a bar chart of holidays per month</li>
+     *     <li>A footer</li>
+     * </ul>
+     *
+     * @param holidays list of {@link Holiday} objects
+     * @return a configured {@link JasperReportBuilder}
+     */
     public static JasperReportBuilder buildReport(List<Holiday> holidays) {
-        // Загрузка логотипа
+        // Load logo
         BufferedImage logoImage = ResourceLoader.loadLogo();
 
-        // --- Crosstab groups ---
+        // Crosstab row group (by country)
         CrosstabRowGroupBuilder<String> rowGroup = ctab.rowGroup("country", String.class)
                 .setHeaderStyle(ReportStyles.getCrosstabCellStyle())
                 .setHeaderWidth(100)
                 .setTotalHeaderStyle(ReportStyles.getCrosstabCellStyle());
 
+        // Crosstab column group (by month)
         CrosstabColumnGroupBuilder<Integer> columnGroup = ctab.columnGroup("month", Integer.class)
                 .setHeaderStyle(ReportStyles.getCrosstabCellStyle())
                 .setHeaderHeight(16)
@@ -51,6 +70,7 @@ public class HolidayCrosstabReport {
                     }
                 });
 
+        // Crosstab definition
         CrosstabBuilder crosstab = ctab.crosstab()
                 .headerCell(cmp.text("Country / Month")
                         .setStyle(ReportStyles.getCrosstabCellStyle())
@@ -66,7 +86,7 @@ public class HolidayCrosstabReport {
                 .setCellHeight(16)
                 .setCellWidth(50);
 
-        // --- Title ---
+        // Title
         ComponentBuilder<?, ?> titleComponent = cmp.verticalList(
                 cmp.horizontalList(
                         cmp.filler(),
@@ -87,7 +107,7 @@ public class HolidayCrosstabReport {
                 ).setFixedHeight(40)
         ).setFixedHeight(123);
 
-        // --- Summary ---
+        // Summary with crosstab and chart
         ComponentBuilder<?, ?> summaryComponent = cmp.verticalList(
                 cmp.horizontalList(
                         cmp.filler().setFixedWidth(50),
@@ -101,7 +121,7 @@ public class HolidayCrosstabReport {
                 HolidayChartBuilder.createMonthlyHolidaysBarChart(holidays)
         );
 
-        // --- Footer ---
+        // Footer
         ComponentBuilder<?, ?> footerComponent = cmp.horizontalList(
                 cmp.filler().setFixedWidth(280),
                 cmp.text("Page Footer")
@@ -110,7 +130,7 @@ public class HolidayCrosstabReport {
                         .setHorizontalTextAlignment(HorizontalTextAlignment.CENTER)
         ).setFixedHeight(31);
 
-        // --- Report skeleton ---
+        // Report skeleton
         return report()
                 .setPageFormat(PageType.A4, PageOrientation.LANDSCAPE)
                 .setPageMargin(margin(20))
@@ -126,6 +146,13 @@ public class HolidayCrosstabReport {
                 .setDataSource(new JRBeanCollectionDataSource(holidays));
     }
 
+    /**
+     * Generates the holiday crosstab report and exports it to PDF and JRXML.
+     *
+     * @param holidays list of {@link Holiday} objects
+     * @param pdfPath  output path for the generated PDF
+     * @param jrxmlPath output path for the generated JRXML
+     */
     public static void generateReport(List<Holiday> holidays, String pdfPath, String jrxmlPath) {
         try {
             System.out.println("Data source size: " + holidays.size());
@@ -148,14 +175,22 @@ public class HolidayCrosstabReport {
         }
     }
 
+    /**
+     * Entry point for standalone execution.
+     * <p>
+     * Runs the crosstab report generation using {@link HolidayDataProvider}.
+     * </p>
+     *
+     * @param args command-line arguments (not used)
+     */
     public static void main(String[] args) {
-        System.out.println("\n[Генерация Crosstab Report с графиком...]");
+        System.out.println("\n[Generating Crosstab Report with chart...]");
         List<Holiday> holidays = HolidayDataProvider.getAllHolidays();
         HolidayCrosstabReport.generateReport(
                 holidays,
                 PathConstants.CROSSTAB_REPORT_PDF,
                 PathConstants.CROSSTAB_REPORT_JRXML
         );
-        System.out.println("Crosstab Report с графиком сгенерирован\n");
+        System.out.println("Crosstab Report with chart generated\n");
     }
 }
